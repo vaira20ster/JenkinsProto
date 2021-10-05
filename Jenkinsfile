@@ -13,7 +13,7 @@ pipeline{
       steps{
         sleep 5
         echo 'Building the solution...'
-        sleep 5
+        sleep 15
       }
         }
         stage('enginebuild'){

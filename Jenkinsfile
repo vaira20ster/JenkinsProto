@@ -11,6 +11,7 @@ pipeline{
       parallel {
         stage('consolebuild'){
       steps{
+        sleep 5
         echo 'Building the solution...'
         sleep 5
       }

@@ -31,4 +31,9 @@ pipeline{
       }
     }
   }
+  post{
+    success {
+      mail bcc: '', body: 'Body', cc: '', from: '', replyTo: '', subject: 'Subject', to: 'vairamuthu@solitontech.com'
+    }
+  }
 }

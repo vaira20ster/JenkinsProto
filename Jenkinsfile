@@ -27,6 +27,7 @@ pipeline{
         bat "\"${tool 'BuildVS'}\" ${WORKSPACE}/Engine/Engine.sln /m /p:Configuration=Debug /p:Platform=\"Any CPU\""
         archiveArtifacts artifacts: 'Engine/Engine/bin/Debug/*.exe'
       }
+          
         }
       }
     }

@@ -33,7 +33,7 @@ pipeline{
   }
   post{
     success {
-      mail bcc: '', body: 'Body', cc: '', from: '', replyTo: '', subject: 'Subject', to: 'vairamuthu@solitontech.com'
+      emailext body: 'Build Successful', subject: 'TestMail', to: 'vairamuthu@solitontech.com'
     }
   }
 }
